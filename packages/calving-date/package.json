@@ -11,5 +11,9 @@
   "license": "ISC",
   "dependencies": {
     "@agc-calculators/core": "^0.1.0"
+  },
+  "gitHead": "cb53a11ae51bc4c72350d0a95451cb19d411530e",
+  "publishConfig": {
+    "access": "public"
   }
 }
