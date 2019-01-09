@@ -1,6 +1,6 @@
 {
   "name": "@agc-calculators/calving-date",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@agc-calculators/core": "^0.1.1"
+    "@agc-calculators/core": "^0.1.2"
   },
   "gitHead": "cb53a11ae51bc4c72350d0a95451cb19d411530e",
   "publishConfig": {
