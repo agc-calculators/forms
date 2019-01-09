@@ -1,0 +1,27 @@
+{
+    "type": "object",
+    "properties": {
+        "breedingDate": {
+            "type": "string",
+            "format": "date"
+        },
+        "gestationPeriod": {
+            "type": "string",
+            "enum": [
+                "279",
+                "280",
+                "281",
+                "282",
+                "283",
+                "284",
+                "285",
+                "286",
+                "287"
+            ]
+        }
+    },
+    "required": [ 
+        "breedingDate", 
+        "gestationPeriod" 
+    ]
+}

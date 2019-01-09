@@ -1,0 +1,10 @@
+{
+    "type": "VerticalLayout",
+    "elements": [{
+        "type": "Control",
+        "scope": "#/properties/breedingDate"
+    }, {
+        "type": "Control",
+        "scope": "#/properties/gestationPeriod"
+    }]
+}

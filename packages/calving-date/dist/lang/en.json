@@ -1,0 +1,9 @@
+{
+    "title": "Calving Date",
+    "description": "Calculates a calving date from a known breeding date.",
+    "properties.breeding-date": "Breeding Date",
+    "properties.calving-date": "Calving Date",
+    "properties.gestation-period": "Gestation Period",
+    "properties.breeding-date.required": "Breeding date is required.",
+    "properties.gestation-period.required": "Gestation period is required."
+}

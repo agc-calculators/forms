@@ -1,0 +1,9 @@
+{
+    "title": "产犊日期",
+    "description": "从已知的育种日期计算产犊日期。",
+    "properties.breeding-date": "Breeding Date",
+    "properties.calving-date": "育种日期",
+    "properties.gestation-period": "怀孕期",
+    "properties.breeding-date.required": "育种日期是必需的。",
+    "properties.gestation-period.required": "怀孕期是必需的。"
+}

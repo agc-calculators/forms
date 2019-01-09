@@ -1,0 +1,9 @@
+{
+    "title": "Date de vêlage",
+    "description": "Calcule une date de vêlage à partir d'une date de reproduction connue.",
+    "properties.breeding-date": "Date de reproduction",
+    "properties.calving-date": "Date de vêlage",
+    "properties.gestation-period": "Période de gestation",
+    "properties.breeding-date.required": "La date de reproduction est requise.",
+    "properties.gestation-period.required": "La période de gestation est obligatoire."
+}
