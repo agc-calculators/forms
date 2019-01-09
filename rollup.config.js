@@ -5,7 +5,21 @@ import minify from 'rollup-plugin-babel-minify';
 import resolve from 'rollup-plugin-node-resolve';
 import copy from 'rollup-plugin-copy';
 
-let outputs = [];
+let outputs = [{
+    input: 'packages/core/index.js',
+    output: {
+        file: `packages/core/dist/agc-core.js`,
+        format: 'iife',
+        name: 'AgcCore'
+      },      
+      plugins: [
+          babel({
+              exclude: 'node_modules/**'
+          }),
+          resolve()
+      ]
+}];
+
 let jsonPlugin = json({
     // All JSON files will be parsed by default,
     // but you can also specifically include/exclude files
@@ -20,7 +34,7 @@ let jsonPlugin = json({
 })
 
 let packages = ['calving-date']
-let names = ['CalvingDate']
+let names = ['AgcCalvingDate']
 
 packages.forEach( (pkg, idx) => {
     let resources = {};
