@@ -1,4 +1,4 @@
-import { dates } from '@agc-calculators/core'
+import { addDays, formatDate, parseDate } from '@agc-calculators/core'
 import schemaJson from './schema.json'
 import uischemaJson from './uischema.json'
 
@@ -30,14 +30,14 @@ export const calculate = (props) => {
         }
 
         // Format input values
-        let breedingDate = dates.parse(props['breedingDate'])
+        let breedingDate = parseDate(props['breedingDate'])
         result.values['breedingDate'] = breedingDate
         let gestationPeriod = parseInt(props['gestationPeriod'])
         result.values['gestationPeriod'] = gestationPeriod
 
         // Calculate values
-        result.values['calvingDate'] = dates.parse(dates.addDays(breedingDate, gestationPeriod))
-        result.values['calvingDate_mmddyyyy'] = dates.format(result.values['calvingDate'], 'MM/DD/YYYY')
+        result.values['calvingDate'] = parseDate(addDays(breedingDate, gestationPeriod))
+        result.values['calvingDate_mmddyyyy'] = formatDate(result.values['calvingDate'], 'MM/DD/YYYY')
         result.calculated = new Date()
 
         resolve(result)

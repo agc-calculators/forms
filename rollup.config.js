@@ -49,10 +49,14 @@ packages.forEach( (pkg, idx) => {
 
     outputs.push({
         input: `packages/${pkg}/index.js`,
+        external: ['@agc-calculators/core'],
         output: {
           file: `packages/${pkg}/dist/agc-${pkg}.js`,
           format: 'iife',
-          name: names[idx]
+          name: names[idx],
+          globals: {
+            '@agc-calculators/core': 'AgcCore'
+          }
         },      
         plugins: [
             babel({
@@ -68,7 +72,10 @@ packages.forEach( (pkg, idx) => {
         output: {
           file: `packages/${pkg}/dist/agc-${pkg}.min.js`,
           format: 'iife',
-          name: names[idx]
+          name: names[idx],
+          globals: {
+            '@agc-calculators/core': 'AgcCore'
+          }
         },      
         plugins: [
             babel({

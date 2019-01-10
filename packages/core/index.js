@@ -1,7 +1,11 @@
-import dates from './dates'
-import validation from './validation'
+import { addDays, formatDate, parseDate, daysBetween } from './dates'
+import { FormValidator, validateElement } from './validation'
 
 export {
-    dates,
-    validation
+    addDays,
+    formatDate,
+    parseDate,
+    daysBetween,
+    FormValidator,
+    validateElement
 }
