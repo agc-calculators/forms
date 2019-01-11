@@ -1,6 +1,6 @@
 {
   "name": "@agc-calculators/calving-date",
-  "version": "0.1.5",
+  "version": "0.1.4",
   "description": "",
   "main": "index.js",
   "scripts": {
