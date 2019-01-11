@@ -1,0 +1,9 @@
+{
+    "title": "Fecha de reproducción",
+    "description": "Calcula una fecha de reproducción a partir de una fecha de parto conocida.",
+    "properties.breeding-date": "Fecha de reproducción",
+    "properties.calving-date": "Fecha de parto",
+    "properties.gestation-period": "Periodo de gestación",
+    "properties.calving-date.required": "Se requiere fecha de parto.",
+    "properties.gestation-period.required": "Se requiere periodo de gestación."
+}

@@ -1,9 +1,9 @@
 {
     "type": "object",
     "properties": {
-        "breedingDate": {
-            "title": "Breeding Date",
-            "id": "breedingDate",
+        "calvingDate": {
+            "title": "Calving Date",
+            "id": "calvingDate",
             "type": "string",
             "format": "date",
             "required": true
@@ -27,7 +27,7 @@
         }
     },
     "required": [ 
-        "breedingDate", 
+        "calvingDate", 
         "gestationPeriod" 
     ]
 }

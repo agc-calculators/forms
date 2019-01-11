@@ -1,0 +1,9 @@
+{
+    "title": "Zuchtdatum",
+    "description": "Berechnet ein Zuchtdatum aus einem bekannten Kalbedatum.",
+    "properties.breeding-date": "Zuchtdatum",
+    "properties.calving-date": "Kalben Datum",
+    "properties.gestation-period": "Schwangerschaftsdauer",
+    "properties.calving-date.required": "Kalbsdatum ist erforderlich.",
+    "properties.gestation-period.required": "Schwangerschaftszeit ist erforderlich."
+}

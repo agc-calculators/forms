@@ -1,7 +1,7 @@
 var AgcCalvingDate = (function (exports, core) {
     'use strict';
 
-    var schemaJson = {type:"object",properties:{breedingDate:{type:"string",format:"date"},gestationPeriod:{type:"string","enum":["279","280","281","282","283","284","285","286","287"]}},required:["breedingDate","gestationPeriod"]};
+    var schemaJson = {type:"object",properties:{breedingDate:{title:"Breeding Date",id:"breedingDate",type:"string",format:"date",required:true},gestationPeriod:{title:"Gestation Period",id:"gestationPeriod",type:"string","enum":["279","280","281","282","283","284","285","286","287"],required:true}},required:["breedingDate","gestationPeriod"]};
 
     var uischemaJson = {type:"VerticalLayout",elements:[{type:"Control",scope:"#/properties/breedingDate"},{type:"Control",scope:"#/properties/gestationPeriod"}]};
 
