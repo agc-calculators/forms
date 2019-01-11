@@ -33,8 +33,8 @@ let jsonPlugin = json({
     namedExports: false
 })
 
-let packages = ['calving-date']
-let names = ['AgcCalvingDate']
+let packages = ['calving-date', 'breeding-date']
+let names = ['AgcCalvingDate', 'AgcBreedingDate']
 
 packages.forEach( (pkg, idx) => {
     let resources = {};
